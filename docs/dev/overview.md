@@ -31,31 +31,42 @@ PMP/
         # move to @/constants
     ├── containers/
     ├── Core/
+        # If dumb component, move to @/components. Else, move to features
     ├── enum/
-    ├── features/
+        # move to @/constants
+    ├── features/                       # keep as current
     ├── GK/
+        # move to @/features/BAS
     ├── hooks/
+        # move to @/hooks
     ├── interfaces/
-    ├── items/
+        # move to @/interfaces
+    ├── items/                          # keep as current
     ├── json/
     ├── layouts/
     ├── lib/
+        # move to @/features/
     ├── OAP/
-    ├── pages/
+        # move to @/features/OAP
+    ├── pages/                          # keep as current
     ├── store/
+        # move to @/store
     ├── stories-examples/
+        # move to @/stories
     ├── temp/
+        # move to @/features
     ├── utils/
-    ├── App.tsx # keep as current
-    ├── env.ts # keep as current
-    ├── i18n.ts # keep as current
-    ├── index.scss # keep as current
-    ├── index.tsx # keep as current
-    ├── LegacyAppProvider.js # keep as current
-    ├── PMP.js # keep as current
-    ├── react-app-env.d.ts # keep as current
-    ├── reportWebVitals.ts # keep as current
-    └── setupTests.ts # keep as current
+        # move to @/utils
+    ├── App.tsx                         # keep as current
+    ├── env.ts                          # keep as current
+    ├── i18n.ts                         # keep as current
+    ├── index.scss                      # keep as current
+    ├── index.tsx                       # keep as current
+    ├── LegacyAppProvider.js            # keep as current
+    ├── PMP.js                          # keep as current
+    ├── react-app-env.d.ts              # keep as current
+    ├── reportWebVitals.ts              # keep as current
+    └── setupTests.ts                   # keep as current
 ```
 
 ## New Structure (WIP)
@@ -81,6 +92,8 @@ PMP/
         ├── styles/         # Store all styles
         ├── assets/         # Store all assets (images, fonts, ...)
         ├── components/     # Store all components. Components is dump component. Use to custom library or own dumb component
+        ├── store/          # Store all store
+        ├── stories/        # Store all stories
     ├── features/
         # Store all features
         # Each component will contain all of its related files (scss, utils, constants, types, ...)
