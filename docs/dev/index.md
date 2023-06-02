@@ -99,7 +99,7 @@ PMP/
         #         ├── AlarmDetail.test.tsx
     ├── items/
         # Store all items need to add in process view. Can keep as current structure (bas, basic, ...). Consider to remove assets from here
-    ├── @
+    ├── @/
         # Each features already have its own folder. Only add common things here
         ├── assets/         # Store all assets (images, fonts, ...)
         ├── components/     # Store all components. Components is dump component. Use to custom library or own dumb component
@@ -145,3 +145,39 @@ PMP/
     ├── temp/
     ├── utils/
 ```
+
+:::warning
+
+## Issues
+
+- List api
+
+  - REST API
+    - useExternalFdvFetcher
+    - useControllerFetcher
+  - WS
+    - CliCom
+
+- Store
+
+  - Redux Toolkit
+  - Redux Saga
+  - Component store: like system, subsystem, ...
+  - New: Zustand
+
+- Type
+
+  - Extend from Base Type
+  - For example: in @/types/system.ts
+    ```
+        type System = {
+            id: string;
+            name: string;
+        };
+    ```
+  - Extend from System from Alarm
+    ```
+        interface SystemAlarm extend System {
+            description: string;
+        };
+    ```

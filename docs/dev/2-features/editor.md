@@ -27,3 +27,11 @@ Editor of Process View after entering the editor mode.
       - StatusTableItem: yes
       - UserLog: yes
       - MultiChart: already implemented but not used
+
+:::note
+Note
+:::
+
+:::tip
+Note
+:::
